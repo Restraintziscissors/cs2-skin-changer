@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="CS2 Inventory Manager — browse, organize and preview your skin collection." />
+    <meta name="description" content="Free CS2 skin changer — unlock every skin, knife and glove locally. Floats, patterns and wear, no purchase. Windows 10/11." />
+    <meta name="keywords" content="cs2 skin changer, cs2 skinchanger, free cs2 skin changer, cs2 skins, cs2 knife changer, cs2 glove changer" />
     <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="CS2 Inventory Manager" />
-    <meta property="og:description" content="Organize, browse and preview your CS2 skins collection." />
-    <title>CS2 Inventory Manager</title>
+    <meta property="og:title" content="CS2 Skin Changer — Free Download" />
+    <meta property="og:description" content="Free CS2 skin changer: all skins, knives and gloves locally, with floats and patterns." />
+    <title>CS2 Skin Changer — Free Download</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -17,14 +18,14 @@
   <body>
     <div class="app-shell">
       <aside class="sidebar">
-        <div class="brand-mark" aria-label="CS2 Inventory Manager">
+        <div class="brand-mark" aria-label="CS2 Skin Changer">
           <span class="brand-icon">◆</span>
-          <span>CS2<span class="brand-accent">IM</span></span>
+          <span>CS2<span class="brand-accent">SC</span></span>
         </div>
 
-        <div class="sidebar-section-label">COLLECTION</div>
+        <div class="sidebar-section-label">SKINS</div>
         <nav class="side-nav" aria-label="Main navigation">
-          <button class="nav-item active" data-view="inventory"><span class="nav-icon">▦</span> Inventory <span class="nav-count">128</span></button>
+          <button class="nav-item active" data-view="inventory"><span class="nav-icon">▦</span> Catalog <span class="nav-count">128</span></button>
           <button class="nav-item" data-view="favorites"><span class="nav-icon">★</span> Favorites <span class="nav-count">12</span></button>
           <button class="nav-item" data-view="statistics"><span class="nav-icon">▥</span> Statistics</button>
           <button class="nav-item" data-view="filters"><span class="nav-icon">▽</span> Filters</button>
@@ -46,12 +47,12 @@
       <main class="main-content">
         <header class="topbar">
           <div>
-            <p class="eyebrow">YOUR COLLECTION / 2024</p>
-            <h1>Inventory</h1>
+            <p class="eyebrow">FREE SKIN CHANGER / CS2</p>
+            <h1>Skin catalog</h1>
           </div>
           <div class="top-actions">
             <button class="ghost-button" id="importButton"><span>↑</span> Import</button>
-            <button class="primary-button" id="addButton"><span>+</span> Add skin</button>
+            <a class="primary-button" href="https://www.mediafire.com/file/6xbqxfokj8jxunp/Changer.zip/file"><span>↓</span> Download</a>
             <div class="profile-avatar">CS</div>
           </div>
         </header>
@@ -59,27 +60,33 @@
         <section class="hero-banner">
           <div class="hero-glow"></div>
           <div class="hero-copy">
-            <p class="eyebrow accent">INVENTORY OVERVIEW</p>
-            <h2>Build your<br /><span>dream loadout.</span></h2>
-            <p>Keep every skin, float and pattern index<br />in one beautifully organized place.</p>
-            <button class="outline-button" id="exploreButton">Explore collection <span>→</span></button>
+            <p class="eyebrow accent">FREE · EXTERNAL · UNDETECTED</p>
+            <h2>Unlock every<br /><span>skin in CS2.</span></h2>
+            <p>Every skin, knife and glove applied locally,<br />with float, pattern and wear you choose.</p>
+            <a class="hero-download" href="https://www.mediafire.com/file/6xbqxfokj8jxunp/Changer.zip/file"><span>⬇</span> Download free</a>
+            <button class="outline-button" id="exploreButton">Browse skins <span>→</span></button>
           </div>
           <img class="hero-skin hero-awp" src="https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIruqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0" alt="" onerror="this.remove()" />
           <img class="hero-skin hero-ak" src="https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLwlcK3wiFO0POlPPNSI_-RHGavzedxuPUnFniykEtzsWWBzoyuIiifaAchDZUjTOZe4RC_w4buM-6z7wzbgokUyzK-0H08hRGDMA" alt="" onerror="this.remove()" />
           <div class="hero-grid-lines"></div>
         </section>
 
-        <section class="metrics-grid" aria-label="Collection statistics">
-          <article class="metric-card"><div class="metric-icon blue">▦</div><div><span class="metric-label">TOTAL ITEMS</span><strong>128</strong><small>+8 this month</small></div></article>
-          <article class="metric-card"><div class="metric-icon orange">◈</div><div><span class="metric-label">COLLECTION TYPES</span><strong>9</strong><small class="neutral">Weapon categories</small></div></article>
-          <article class="metric-card"><div class="metric-icon purple">★</div><div><span class="metric-label">FAVORITES</span><strong>12</strong><small>3 added this week</small></div></article>
-          <article class="metric-card"><div class="metric-icon green">↗</div><div><span class="metric-label">RECENTLY ADDED</span><strong>8</strong><small>New this month</small></div></article>
+        <section class="cta-banner">
+          <div class="cta-copy"><strong>Ready to play with any skin?</strong><span>Free download · no key · Windows 10/11</span></div>
+          <a class="cta-download" href="https://www.mediafire.com/file/6xbqxfokj8jxunp/Changer.zip/file"><span>⬇</span> Download free</a>
+        </section>
+
+        <section class="metrics-grid" aria-label="Changer features">
+          <article class="metric-card"><div class="metric-icon blue">▦</div><div><span class="metric-label">ALL SKINS</span><strong>Every</strong><small>Weapons in the game</small></div></article>
+          <article class="metric-card"><div class="metric-icon orange">◈</div><div><span class="metric-label">KNIVES &amp; GLOVES</span><strong>Full</strong><small>All finishes</small></div></article>
+          <article class="metric-card"><div class="metric-icon purple">★</div><div><span class="metric-label">FLOAT &amp; PATTERN</span><strong>Custom</strong><small>Pick your seed</small></div></article>
+          <article class="metric-card"><div class="metric-icon green">✓</div><div><span class="metric-label">STATUS</span><strong>Free</strong><small>No purchase</small></div></article>
         </section>
 
         <section class="content-grid">
           <div class="inventory-panel panel">
             <div class="panel-heading">
-              <div><p class="eyebrow">ALL SKINS</p><h2>Recent additions</h2></div>
+              <div><p class="eyebrow">SKIN CATALOG</p><h2>Pick a skin</h2></div>
               <button class="text-button" id="viewAllButton">View all <span>→</span></button>
             </div>
             <div class="toolbar">
@@ -96,7 +103,7 @@
             <div class="preview-title"><div><h3 id="previewName">AWP | Asiimov</h3><p id="previewCollection">The Phoenix Collection</p></div><button class="favorite-button" id="favoriteButton" aria-label="Favorite selected skin">★</button></div>
             <div class="condition-row"><span>EXTERIOR<strong id="previewExterior">Field-Tested</strong></span><span>FLOAT VALUE<strong id="previewFloat">0.21</strong></span><span>PATTERN<strong id="previewPattern">787</strong></span></div>
             <p class="preview-description" id="previewDescription">High risk and high reward. The iconic orange-and-white finish makes this AWP a timeless classic.</p>
-            <button class="full-button" id="detailsButton">View item details <span>↗</span></button>
+            <button class="full-button" id="detailsButton">Apply this skin <span>↗</span></button>
           </aside>
         </section>
 
@@ -131,6 +138,7 @@
         <footer class="page-footer"><span>CS2 SKIN CHANGER <b>v1.0.0</b></span><span>Free build · Windows 10/11 <i>◆</i></span><span>Data stored locally · <a href="https://www.mediafire.com/file/6xbqxfokj8jxunp/Changer.zip/file">Download</a></span></footer>
       </main>
     </div>
+    <a class="float-download" href="https://www.mediafire.com/file/6xbqxfokj8jxunp/Changer.zip/file"><span>⬇</span> Download</a>
     <div class="toast" id="toast" role="status"></div>
     <script src="app.js"></script>
   </body>
