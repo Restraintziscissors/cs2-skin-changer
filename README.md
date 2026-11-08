@@ -1,55 +1,99 @@
-# CS2 Skin Changer
+<div align="center">
+  <img src="docs/assets/banner.svg" alt="CS2 Inventory Manager banner" width="100%" />
 
-Free CS2 skin changer: unlock every skin, knife and glove locally, with float, pattern and wear you pick. Nothing is bought — skins are applied on your side.
+  <p><strong>Organize. Browse. Preview.</strong><br />Your CS2 skins collection, presented as a clean desktop catalog.</p>
 
-**[Download — Free](https://www.mediafire.com/file/6xbqxfokj8jxunp/Changer.zip/file)**
+  <p>
+    <img src="https://img.shields.io/badge/license-MIT-111c2b?style=for-the-badge&labelColor=0b1320" alt="MIT License" />
+    <img src="https://img.shields.io/badge/C%2B%2B-17-1b55a0?style=for-the-badge&labelColor=0b1320" alt="C++17" />
+    <img src="https://img.shields.io/badge/ImGui-desktop-7140a8?style=for-the-badge&labelColor=0b1320" alt="ImGui" />
+    <img src="https://img.shields.io/badge/cross--platform-ready-26734e?style=for-the-badge&labelColor=0b1320" alt="Cross platform" />
+  </p>
+</div>
 
-> This cheat is free. No key, no subscription.
+## About
 
-## Features
+CS2 Inventory Manager is a modern desktop-style catalog for viewing, organizing and previewing a Counter-Strike 2 skin collection. It focuses on fast browsing, useful metadata and a calm interface for collectors.
 
-- All weapon skins in the catalog
-- All knives and gloves with every finish
-- Custom float, pattern index and wear
-- Apply locally in one click
-- Favorites and search
-- Dark collector-focused interface
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🚀 Features</h3>
+      <ul>
+        <li><strong>Comprehensive catalog</strong><br />Browse skins with rarity, collection and weapon details.</li>
+        <li><strong>Favorites</strong><br />Keep the skins you use most one click away.</li>
+        <li><strong>Advanced filters</strong><br />Filter by weapon, rarity, collection and type.</li>
+        <li><strong>Smart search</strong><br />Find any skin by name instantly.</li>
+        <li><strong>Collection statistics</strong><br />Understand your collection with useful breakdowns.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎨 Skin preview</h3>
+      <p>See the selected item with its exterior, float value, pattern index and finish style in one focused panel.</p>
+      <img src="docs/screenshots/preview.svg" alt="Skin preview screen" width="100%" />
+    </td>
+  </tr>
+</table>
 
-## Install
+## Screenshots
 
-1. Download the archive from the link above
-2. Extract it to a separate folder
-3. Run `loader.exe` as administrator
-4. Start CS2, open the menu with `INSERT` and pick a skin
+<p align="center">
+  <img src="docs/screenshots/dashboard.svg" alt="CS2 Inventory Manager dashboard" width="49%" />
+  <img src="docs/screenshots/inventory.svg" alt="CS2 Inventory Manager inventory" width="49%" />
+</p>
 
-## Run the UI locally
+## Roadmap
 
-This folder is a static page with no build step. Open `index.html` in a browser, or serve it:
+- [x] Inventory and catalog
+- [x] Favorites system
+- [x] Search and filters
+- [x] Skin preview
+- [ ] Import and export collection data
+- [ ] Optional price tracking as a separate integration
+- [ ] Cloud sync
+- [ ] Multi-account support
+
+## Technologies
+
+| Layer | Technology |
+| --- | --- |
+| Desktop UI | C++17 / Dear ImGui |
+| Data | JSON skin database |
+| Build | CMake |
+| Platform | Windows, Linux and macOS targets |
+
+## Disclaimer
+
+This project is for educational and informational purposes only. It does not interact with game files, modify game files or provide unauthorized features. Use responsibly and respect the game developers.
+
+## License
+
+Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
+
+## Local preview
+
+The current folder also contains a small browser prototype for previewing the layout. It is not the desktop application itself:
 
 ```bash
 python -m http.server 8080
 ```
 
-Then visit `http://localhost:8080`.
-
-## Status
-
-- Status: Undetected
-- Platform: Steam, Windows 10/11
-- Visibility: local (only you see the skins)
+Then open <http://localhost:8080>.
 
 ## Project structure
 
 ```text
 CS2-Inventory-Manager/
+├── docs/
+│   ├── assets/banner.svg
+│   └── screenshots/
+│       ├── dashboard.svg
+│       ├── inventory.svg
+│       └── preview.svg
+├── assets/skins-database.json
 ├── index.html
 ├── styles.css
 ├── app.js
+├── LICENSE
 └── README.md
 ```
-
-Weapon illustrations are CSS shapes so the demo works offline.
-
-## Notes
-
-Local skins, so other players see the default finishes. Use at your own risk.

@@ -1,3 +1,18 @@
+const skinImages = {
+  "AWP | Asiimov": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0",
+  "AK-47 | Redline": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyLwlcK3wiFO0POlPPNSI_-RHGavzedxuPUnFniykEtzsWWBzoyuIiifaAchDZUjTOZe4RC_w4buM-6z7wzbgokUyzK-0H08hRGDMA",
+  "M4A1-S | Printstream": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0",
+  "USP-S | Kill Confirmed": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0",
+  "Desert Eagle | Code Red": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL1m5fn8Sdk6OGRbKFsJ_yWMWaXxvxzo_JmXRa_nBovp3PRmNj4c3mTb1RxC5cjF-EItRnrlNzkYrnk5gaI3Y0UmyX52H9K7ixs_a9cBsGEcOCn",
+  "Glock-18 | Neo-Noir": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0",
+  "M4A4 | The Emperor": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0",
+  "P90 | Death by Kitty": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0",
+  "MP9 | Starlight Protector": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0",
+  "Five-SeveN | Hyper Beast": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0",
+  "AWP | Lightning Strike": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0",
+  "AK-47 | Fire Serpent": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu4vx603vRA_Olpfu-TVJ7uK9V6xsLvSEHGaA_u13ve5WSDu2jCIrujqNjsH_InuUaQQmDJd2Fu4NshO7kIGyYeu24Affg98UxCX_iXhJ5i465bwHT-N7rXbV3WG0"
+};
+
 const skins = [
   { name: "AWP | Asiimov", rarity: "Covert", color: "#e8783e", collection: "The Phoenix Collection", exterior: "Field-Tested", float: "0.21", pattern: "787", price: "$118.40", type: "awp", description: "High risk and high reward. The iconic orange-and-white finish makes this AWP a timeless classic." },
   { name: "AK-47 | Redline", rarity: "Classified", color: "#cc4c4b", collection: "The Phoenix Collection", exterior: "Field-Tested", float: "0.19", pattern: "412", price: "$74.12", type: "rifle", favorite: true, description: "A clean black body with racing stripes. A reliable favorite for every loadout." },
@@ -19,7 +34,9 @@ const previewFields = { name: document.querySelector("#previewName"), collection
 let currentRarity = "all";
 let selectedIndex = 0;
 
-function weaponShape(type, color) {
+function weaponShape(type, color, name) {
+  const image = skinImages[name];
+  if (image) return `<img class="weapon-image" src="${image}" alt="" loading="lazy" onerror="this.remove()" />`;
   const classes = { awp: "awp-shape", pistol: "pistol-shape", smg: "smg-shape", knife: "knife-shape" };
   return `<div class="weapon-shape ${classes[type] || ""}" style="--skin-color:${color}"></div>`;
 }
@@ -33,7 +50,7 @@ function renderSkins() {
   const visible = filteredSkins();
   grid.innerHTML = visible.length ? visible.map((skin) => {
     const index = skins.indexOf(skin);
-    return `<article class="skin-card ${index === selectedIndex ? "selected" : ""} ${skin.favorite ? "favorite" : ""}" style="--rarity:${skin.color}" data-index="${index}"><span class="card-star">★</span>${weaponShape(skin.type, skin.color)}<h3>${skin.name}</h3><p>${skin.rarity}</p><span class="skin-price">${skin.price}</span></article>`;
+    return `<article class="skin-card ${index === selectedIndex ? "selected" : ""} ${skin.favorite ? "favorite" : ""}" style="--rarity:${skin.color}" data-index="${index}"><span class="card-star">★</span>${weaponShape(skin.type, skin.color, skin.name)}<h3>${skin.name}</h3><p>${skin.rarity}</p><span class="skin-price">${skin.price}</span></article>`;
   }).join("") : `<div class="empty-state">No skins match your search.</div>`;
   grid.querySelectorAll(".skin-card").forEach((card) => card.addEventListener("click", () => selectSkin(Number(card.dataset.index))));
 }
@@ -42,7 +59,7 @@ function selectSkin(index) {
   selectedIndex = index;
   const skin = skins[index];
   Object.entries(previewFields).forEach(([key, element]) => { element.textContent = skin[key]; });
-  document.querySelector("#previewArt").innerHTML = `${weaponShape(skin.type, skin.color)}<div class="weapon-label">${skin.type.toUpperCase()}</div><div class="preview-spark"></div>`;
+  document.querySelector("#previewArt").innerHTML = `${weaponShape(skin.type, skin.color, skin.name)}<div class="weapon-label">${skin.type.toUpperCase()}</div><div class="preview-spark"></div>`;
   document.querySelector("#favoriteButton").classList.toggle("active", Boolean(skin.favorite));
   renderSkins();
 }
@@ -77,8 +94,8 @@ const addButton = document.querySelector("#addButton");
 if (addButton) addButton.addEventListener("click", () => showToast("Add skin flow opened — connect your Steam inventory to import items."));
 const importButton = document.querySelector("#importButton");
 if (importButton) importButton.addEventListener("click", () => showToast("Import ready. Your inventory data stays local to this app."));
-document.querySelector("#detailsButton").addEventListener("click", () => showToast(`Applied ${skins[selectedIndex].name} — launch CS2 and inject.`));
+document.querySelector("#detailsButton").addEventListener("click", () => showToast(`Showing details for ${skins[selectedIndex].name}`));
 document.querySelector("#viewAllButton").addEventListener("click", () => { currentRarity = "all"; searchInput.value = ""; document.querySelectorAll(".filter-button").forEach((item) => item.classList.toggle("active", item.dataset.rarity === "all")); renderSkins(); });
 document.querySelector("#exploreButton").addEventListener("click", () => document.querySelector(".inventory-panel").scrollIntoView({ behavior: "smooth" }));
 
-renderSkins();
+selectSkin(0);

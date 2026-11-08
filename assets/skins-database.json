@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "skins": [
+    { "name": "AWP | Asiimov", "rarity": "Covert", "collection": "The Phoenix Collection", "exterior": "Field-Tested", "float": 0.21, "pattern": 787 },
+    { "name": "AK-47 | Redline", "rarity": "Classified", "collection": "The Phoenix Collection", "exterior": "Field-Tested", "float": 0.19, "pattern": 412 },
+    { "name": "M4A1-S | Printstream", "rarity": "Covert", "collection": "The Fracture Collection", "exterior": "Minimal Wear", "float": 0.08, "pattern": 91 },
+    { "name": "USP-S | Kill Confirmed", "rarity": "Covert", "collection": "The Shadow Collection", "exterior": "Minimal Wear", "float": 0.11, "pattern": 303 }
+  ]
+}
