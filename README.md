@@ -70,16 +70,6 @@ This project is for educational and informational purposes only. It does not int
 
 Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
 
-## Local preview
-
-The current folder also contains a small browser prototype for previewing the layout. It is not the desktop application itself:
-
-```bash
-python -m http.server 8080
-```
-
-Then open <http://localhost:8080>.
-
 ## Project structure
 
 ```text
